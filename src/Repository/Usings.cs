@@ -1,0 +1,12 @@
+﻿global using System.Data;
+global using System.Data.SqlClient;
+global using System.Reflection;
+global using System.Collections.Concurrent;
+global using Dapper;
+global using Repository.Core;
+global using Repository.Contracts;
+global using Repository.Data;
+global using Repository.Domain.Attributes;
+global using Microsoft.Extensions.Logging;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Data.Sqlite;
