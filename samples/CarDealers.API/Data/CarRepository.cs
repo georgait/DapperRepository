@@ -11,7 +11,7 @@ public sealed class CarRepository : BaseRepository<Car>, ICarRepository
     {
     }
 
-    public async Task<IReadOnlyList<Car>> GetAllCardsAsync()
+    public async Task<IReadOnlyList<Car>> GetAllCarsAsync()
     {
         var sql = """
                 SELECT Id, Make, Model, Year, VIN

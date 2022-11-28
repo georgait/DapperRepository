@@ -17,7 +17,7 @@ public class CarsController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAllCars()
     {
-        var cars = await _carRepository.GetAllCardsAsync();
+        var cars = await _carRepository.GetAllCarsAsync();
         return Ok(cars);
     }
 
