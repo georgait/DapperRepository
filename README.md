@@ -14,6 +14,8 @@ For now just download the source code or fork the repo.
 
 ## Usage
 
+You can refer to https://github.com/georgait/DapperRepository/tree/master/samples/CarDealers.API
+
 ### Setup entities
 
 ```C#
