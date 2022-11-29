@@ -38,7 +38,7 @@ public sealed class VendorRepository : BaseRepository<Vendor>, IVendorRepository
         return await ReadAsync<Car, dynamic>(sql, new { id });
     }
 
-    public async Task<Vendor> CreateCarAsync(CreateVendorDto vendor)
+    public async Task<Vendor> CreateVendorAsync(CreateVendorDto vendor)
     {
         var sql1 = """
                 INSERT INTO Vendor (FirstName, LastName, Email, Phone) 

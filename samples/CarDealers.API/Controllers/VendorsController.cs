@@ -31,7 +31,7 @@ public class VendorsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateVendor(CreateVendorDto request)
     {
-        var created = await _vendorRepository.CreateCarAsync(request);
+        var created = await _vendorRepository.CreateVendorAsync(request);
         return CreatedAtRoute("GetVendorWithCars", new { id = created.Id }, created);
     }
 }
