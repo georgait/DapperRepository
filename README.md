@@ -47,7 +47,7 @@ public class Vendor : BusinessEntity<int>
 ```C#
 public interface IVendorRepository
 {
-    Task<Vendor> CreateCarAsync(CreateVendorDto vendor);
+    Task<Vendor> CreateVendorAsync(CreateVendorDto vendor);
     Task<IReadOnlyList<Vendor>> GetAllVendorsAsync();
     Task<IReadOnlyList<Vendor>> GetVendorWithCarsAsync(int id);
 }
@@ -84,7 +84,7 @@ public sealed class VendorRepository : BaseRepository<Vendor>, IVendorRepository
         return await ReadAsync<Car, dynamic>(sql, new { id });
     }
 
-    public async Task<Vendor> CreateCarAsync(CreateVendorDto vendor)
+    public async Task<Vendor> CreateVendorAsync(CreateVendorDto vendor)
     {
         var sql1 = """
                 INSERT INTO Vendor (FirstName, LastName, Email, Phone)
@@ -181,7 +181,7 @@ public class VendorsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateVendor(CreateVendorDto request)
     {
-        var created = await _vendorRepository.CreateCarAsync(request);
+        var created = await _vendorRepository.CreateVendorAsync(request);
         return CreatedAtRoute("GetVendorWithCars", new { id = created.Id }, created);
     }
 }
