@@ -10,7 +10,7 @@ public class CarsController : ControllerBase
     private readonly ICarRepository _carRepository;
 
     public CarsController(ICarRepository carRepository)
-	{
+    {
         _carRepository = carRepository;
     }
 

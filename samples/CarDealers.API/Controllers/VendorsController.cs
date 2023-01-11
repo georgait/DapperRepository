@@ -10,7 +10,7 @@ public class VendorsController : ControllerBase
     private readonly IVendorRepository _vendorRepository;
 
     public VendorsController(IVendorRepository vendorRepository)
-	{
+    {
         _vendorRepository = vendorRepository;
     }
 
