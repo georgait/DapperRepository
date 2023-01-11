@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{F86B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarDealers.API", "samples\CarDealers.API\CarDealers.API.csproj", "{D1C43AA6-E254-4716-AF84-637D27E93301}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BDB33B74-5754-4366-A6BC-7CFF49624D2A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository.UnitTests", "test\Repository.UnitTests\Repository.UnitTests.csproj", "{379B72A2-858D-4FC2-B0E0-9B9EE085641C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{D1C43AA6-E254-4716-AF84-637D27E93301}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1C43AA6-E254-4716-AF84-637D27E93301}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1C43AA6-E254-4716-AF84-637D27E93301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379B72A2-858D-4FC2-B0E0-9B9EE085641C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379B72A2-858D-4FC2-B0E0-9B9EE085641C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379B72A2-858D-4FC2-B0E0-9B9EE085641C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379B72A2-858D-4FC2-B0E0-9B9EE085641C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1DF050BB-F53E-4A73-AE41-52DEF7B77316} = {F1C397EC-CBA0-4C7D-A140-439200FB9FA3}
 		{D1C43AA6-E254-4716-AF84-637D27E93301} = {F86B029D-7A98-461F-8ACA-271C1F716A1E}
+		{379B72A2-858D-4FC2-B0E0-9B9EE085641C} = {BDB33B74-5754-4366-A6BC-7CFF49624D2A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6F7473E-28B2-413D-85E9-2BB369B66D52}
